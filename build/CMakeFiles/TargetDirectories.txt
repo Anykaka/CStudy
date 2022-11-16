@@ -1,0 +1,3 @@
+/home/lz/CStudy/build/CMakeFiles/rebuild_cache.dir
+/home/lz/CStudy/build/CMakeFiles/edit_cache.dir
+/home/lz/CStudy/build/CMakeFiles/run.dir

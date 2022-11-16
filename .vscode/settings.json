@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "unistd.h": "c",
+        "fileio.h": "c",
+        "stat.h": "c",
+        "stdio.h": "c",
+        "fcntl.h": "c",
+        "types.h": "c"
+    },
+    "cmake.configureOnOpen": true
+}
