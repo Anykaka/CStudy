@@ -118,3 +118,24 @@ WRITE:{
 }
     
 }
+
+void sercises_3_6() {
+    int fd = open("sercises_3_6.txt", O_RDWR | O_SYNC | O_CREAT | O_APPEND, 0777);
+    ssize_t size = write(fd, "write_1__", 10);
+    if (10 != size) {
+        printf("%s:%d fd:%d write write_1__ failed.\n", __func__, __LINE__, fd);
+    }
+    // 结果：文件尾端添加
+    off_t off_seek = 100;
+    lseek(fd, off_seek, SEEK_SET);
+    size = write(fd, "write_2__", 10);
+    if (10 != size) {
+        printf("%s:%d fd:%d write write_2__ failed.\n", __func__, __LINE__, fd);
+    }
+    // 结果：文件尾端添加
+    size = pwrite(fd, "write_3__", 10, off_seek);
+    if (10 != size) {
+        printf("%s:%d fd:%d write write_3__ failed.\n", __func__, __LINE__, fd);
+    }
+    close(fd);
+}

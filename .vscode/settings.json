@@ -5,7 +5,8 @@
         "stat.h": "c",
         "stdio.h": "c",
         "fcntl.h": "c",
-        "types.h": "c"
+        "types.h": "c",
+        "filedir.h": "c"
     },
     "cmake.configureOnOpen": true
 }
