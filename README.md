@@ -8,7 +8,4 @@
 src/include/fileIO.h
 src/include/fileIO.c
 
-内容包括：
-
-- open()
-- creat()
+- 2022.11.17 1、修改文件结构；2、添加习题3.2代码；
