@@ -6,7 +6,9 @@
         "stdio.h": "c",
         "fcntl.h": "c",
         "types.h": "c",
-        "filedir.h": "c"
+        "filedir.h": "c",
+        "print.h": "c",
+        "stdarg.h": "c"
     },
     "cmake.configureOnOpen": true
 }

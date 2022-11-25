@@ -3,6 +3,7 @@
 #include <sys/stat.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include "../base/print.h"
 
 void dumpstat(int argc, char *argv[]);
 void test_access(int argc, char *argv[]);

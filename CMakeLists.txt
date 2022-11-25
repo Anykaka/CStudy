@@ -11,6 +11,7 @@ AUX_SOURCE_DIRECTORY(. ALL_LIST)
 # 添加路径
 ADD_SUBDIRECTORY(src/fileio)
 ADD_SUBDIRECTORY(src/filedir)
+ADD_SUBDIRECTORY(src/base)
 # 编译
 ADD_EXECUTABLE( main
     ${ALL_LIST}
@@ -19,6 +20,7 @@ ADD_EXECUTABLE( main
 TARGET_LINK_LIBRARIES(main
     fileio
     filedir
+    base
 )
 # 指定安装路径
 INSTALL(TARGETS main
